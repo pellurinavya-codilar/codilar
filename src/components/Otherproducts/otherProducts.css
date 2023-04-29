@@ -1,0 +1,14 @@
+.productimage{
+    width:152px;
+    height: 190px;
+}
+.parent-container{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
