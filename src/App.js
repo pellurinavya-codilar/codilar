@@ -9,10 +9,10 @@ import OtherProduct from './components/Otherproducts/otherProducts';
 function App() {
   return (
     <div className="App">
-     <NavBar/>
-     <ProductNav/>
-      <Product/>
-      <OtherProduct/>
+     {/* <NavBar/> */}
+     {/* <ProductNav/> */}
+      {/* <Product/> */}
+      {/* <OtherProduct/> */}
       <Footer/>
       
       

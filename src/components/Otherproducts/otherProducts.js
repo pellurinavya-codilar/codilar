@@ -100,10 +100,11 @@ let products = [
 
 const OtherProduct = (props) => {
   return (
+    <div className="cntainer">
     <div className="parent-container">
       {products.map((item, index) => {
         return (
-          <>
+          <div>
             <div className="productcontainer" key={index}>
               <img
                 className="productimage"
@@ -114,9 +115,10 @@ const OtherProduct = (props) => {
               <p>{item.priceFrom}</p>
               <p>{item.priceTo}</p>
             </div>
-          </>
+          </div>
         );
       })}
+    </div>
     </div>
   );
 };
