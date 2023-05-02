@@ -3,13 +3,18 @@
     height: 190px;
 }
 .parent-container{
-    width: auto;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    width: 100vw;
+    gap: 50px;
     
+    
+    
+    
+}
+.product-display-info:hover{
+border:2px solid var(--linkname);
 }

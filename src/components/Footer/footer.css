@@ -13,12 +13,12 @@
   padding-left: 25%;
   padding-top: 20px;
 }
-li {
+.list-element {
   list-style: none;
   padding: 5px;
   cursor: pointer;
 }
-li:hover {
+.list-element:hover {
   text-decoration: underline;
 }
 .link {

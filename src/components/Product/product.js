@@ -7,7 +7,7 @@ const Product = () => {
     <div className="product-container">
       <div className="product-display">
         <div className="product-image">
-          <img src={Bag} alt="bag" />
+          <img className="bagimage" src={Bag} alt="bag" />
         </div>
         <div className="product-description">
           <p className="display-title"> Crown Summit Backpack</p>

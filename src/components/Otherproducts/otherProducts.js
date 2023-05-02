@@ -100,25 +100,27 @@ let products = [
 
 const OtherProduct = (props) => {
   return (
-    <div className="cntainer">
-    <div className="parent-container">
-      {products.map((item, index) => {
-        return (
-          <div>
-            <div className="productcontainer" key={index}>
-              <img
-                className="productimage"
-                alt={item.description}
-                src={item.img}
-              ></img>
-              <p>{item.description}</p>
-              <p>{item.priceFrom}</p>
-              <p>{item.priceTo}</p>
+    <div className="container">
+      <div className="parent-container">
+        {products.map((item, index) => {
+          return (
+            <div className="product-container">
+              <div className="productcontainer" key={index}>
+                <div className="product-display-info">
+                  <img
+                    className="productimage"
+                    alt={item.description}
+                    src={item.img}
+                  ></img>
+                  <p>{item.description}</p>
+                  <p>{item.priceFrom}</p>
+                  <p>{item.priceTo}</p>
+                </div>
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

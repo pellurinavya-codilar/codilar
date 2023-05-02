@@ -6,7 +6,7 @@ import App from "./App";
 
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://cwarmer246.codilar.in//graphql',
+    uri: '/graphql',
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
