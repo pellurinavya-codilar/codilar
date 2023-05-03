@@ -16,6 +16,10 @@
   padding-left: 120px;
   
 }
+.bagimage{
+  height:690px;
+  width: 690px;
+}
 .review{
   color:var(--linkcolor);
   text-decoration: none;
@@ -95,6 +99,9 @@
   padding-right: 23px;
   font-weight: bolder;
 
+}
+.product-container{
+  padding-bottom: 0px;
 }
 
 @media  (min-width:320px) and (max-width:480px) {

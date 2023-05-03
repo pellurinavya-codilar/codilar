@@ -3,6 +3,9 @@
   width: 50%;
   padding: 10px 0px 40px 7%;
 }
+.container{
+  padding-bottom: 15px;
+}
 .container-footer {
   display: flex;
   background-color: var(--secondnavbarbackgroundcolor);
@@ -30,7 +33,7 @@
   color: var(--secondnavbarcolor);
   background-color: #f0f0f0;
   font-weight: 500;
-  width: 24%;
+ 
   margin-top: 30px;
 }
 .input-field {
@@ -48,6 +51,9 @@
   border: 1px solid var(--buttonbackgroundcolor);
   color: var(--navbarcolor);
   cursor: pointer;
+}
+.menu-one-class{
+  padding-right: 90px;
 }
 
 @media  (min-width:320px) and (max-width:480px) {
@@ -89,7 +95,7 @@
     .input-field {
         display: flex;
         justify-content: center;
-        width: 94%;
+        width: 96%;
         padding: 20px 12px 20px 12px;
         background-color: var(--navbarcolor);
     
@@ -101,4 +107,12 @@
     li:hover {
         text-decoration: underline;
       }
+}
+@media  (min-width:769px) and (max-width:940px) {
+  .container-parent{
+    padding: 0px 0px 0px 10px;
+  }
+  .input-field{
+    padding-left: 10%;
+  }
 }

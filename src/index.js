@@ -1,40 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApolloProvider, HttpLink, ApolloClient, InMemoryCache } from "@apollo/client";
-import "./App.css"
+import "./App.css";
 import App from "./App";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 
-const client = new ApolloClient({
-  link: new HttpLink({
-    uri: '/graphql',
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    },
-    fetchOptions: {
-      mode: 'no-cors'
-    }
-  }),
-  cache: new InMemoryCache(),
-});
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <ApolloProvider client={client}>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
     <App />
-  </ApolloProvider>,
-  rootElement
+  </React.StrictMode>
 );
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import App from './App';
-
-
-
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );

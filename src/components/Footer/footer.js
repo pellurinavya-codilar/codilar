@@ -35,7 +35,7 @@ const Footer = () => {
               <a className="link" href="#">
                 Privacy and Cookies
               </a>
-            </li  >
+            </li>
             <li className="list-element">
               <a className="link" href="#">
                 Search Terms
@@ -65,7 +65,8 @@ const Footer = () => {
           placeholder="Enter your email address"
           className="input-inner"
         ></input>
-        <button className="email_button">Subscribe</button>
+
+        <button className="email_button"> Subscribe</button>
       </div>
     </div>
   );
