@@ -56,7 +56,7 @@ const Product = () => {
     <div>
       {data.data?.products?.items.map((item, index) => {
         return (
-          <div className="product-container">
+          <div className="product-container-content">
             <div className="product-display">
               <div className="product-image">
                 <img className="bagimage" src={item.image.url} alt="bag" />
@@ -93,10 +93,12 @@ const Product = () => {
                 </div>
 
                 <div className="wishlist">
-                  <div>
+                  <div className="icon-class">
+                    <i class="fa-sharp fa-solid fa-heart"></i>
                     <p className="wishlist-text">ADD TO WISH LIST</p>
                   </div>
-                  <div>
+                  <div className="icon-class">
+                    <i class="fa-sharp fa-solid fa-chart-simple"></i>
                     <p className="wishlist-text">ADD TO COMPARE</p>
                   </div>
                 </div>

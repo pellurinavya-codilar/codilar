@@ -1,98 +1,101 @@
 import React from "react";
+import DEFAULT from "../assets/image.jpg";
+import MOB from "../assets/mob.jpg";
+import LAPTOP from "../assets/laptop.jpg";
+import CRICKET from "../assets/cricketbox.jpg";
+import MYPHONE from "../assets/myphone.jpg";
 import "./otherProducts.css";
 let products = [
   {
     description: "Fusion Backpack",
     priceFrom: "₹59",
-    img:"../assets/image.jpg",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "Wayfarer Messenger",
     priceFrom: "₹45",
     priceTo: "",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "Rival Field Messenger",
     priceFrom: "₹74",
     priceTo: "",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "Impulse Duffle",
     priceFrom: "₹74",
     priceTo: "",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "Push It Messenger Bag",
     priceFrom: "₹45",
     priceTo: "",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "Overnight Duffle",
     priceFrom: "₹45",
     priceTo: "",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "TABLE_LAMP",
     priceFrom: "From ₹2,110.00",
     priceTo: "To ₹2,222.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "MyLaptop",
     priceFrom: "From ₹23,000.00",
     priceTo: "To ₹29,000.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "battery",
     priceFrom: "From ₹72.00",
     priceTo: "To ₹70.00 Regular Price",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "ourlaptop",
     priceFrom: "From ₹68.00",
     priceTo: "₹To 1,767.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${LAPTOP}`,
   },
   {
     description: "cricket box",
     priceFrom: "From ₹68.00",
     priceTo: "To ₹110.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${CRICKET}`,
   },
   {
     description: "myphone",
     priceFrom: "From ₹34.00",
     priceTo: "To ₹72.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${MYPHONE}`,
   },
   {
     description: "Bundle product",
     priceFrom: "From ₹340.00",
     priceTo: "To ₹450.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "mob",
     priceFrom: "From ₹34.00",
     priceTo: "To ₹72.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
 ];
 
 const OtherProduct = (props) => {
   return (
-    <div className="container">
-       <p className="message">We found other products you might like!</p>
-      <div className="parent-container">
-     
+    <div className="container-product">
+      <p className="message">We found other products you might like!</p>
+      <div className="parent-container-product">
         {products.map((item, index) => {
           return (
             <div className="product-container">

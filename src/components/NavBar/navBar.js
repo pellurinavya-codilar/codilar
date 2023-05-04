@@ -1,83 +1,7 @@
-// // import React from "react";
-// // import { BsCart4} from 'react-icons/bs';
-// // import{BsSearch} from 'react-icons/bs';
-// // import Image from "../assets/starbucks.jpg";
-// // import "./navbar.css";
-// // const NavBar = () => {
-// //   return (
-
-// //     <div>
-// //       <nav class="navbar">
-// //         <div class="navbar-container container">
-// //           <ul class="menu-items">
-// //             <li>
-// //               <a href="#">Welcome to codilar</a>
-// //             </li>
-// //             <li>
-// //               <a href="#">Sign In or</a>
-// //             </li>
-// //             <li>
-// //               <a href="#">Create an account</a>
-// //             </li>
-// //             <li>
-// //               <select className="selection">
-// //                 <option>vijayawadda</option>
-// //               </select>
-// //             </li>
-// //           </ul>
-// //         </div>
-// //       </nav>
-// //       <div className="sub-nav">
-// //         <div className="sub-nav-container">
-// //         <img src={Image} alt="starbucks" className="image"></img>
-// //         </div>
-// //         <div className="search-parent">
-// //           <label >
-
-// //           <input type="search" placeholder={`Search entire store here..${<BsSearch/>}`} className="searchbar"/>
-// //           <BsCart4 size={"22"} color="#6e716e" className="cart-icon"/>
-// //           </label>
-// //         </div>
-// //       </div>
-// //     </div>
-// //   );
-// // };
-
-// export default NavBar;
-
-//Pages
 import React, { useState } from "react";
+import Starbucks from "../assets/starbucks.jpg";
+import { BsCart4 } from "react-icons/bs";
 import "./navBar.css";
-const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
-};
-
-const About = () => {
-  return (
-    <div>
-      <h1>About</h1>
-    </div>
-  );
-};
-const Blog = () => {
-  return (
-    <div>
-      <h1>Blog</h1>
-    </div>
-  );
-};
-const Contact = () => {
-  return (
-    <div>
-      <h1>Contact Us</h1>
-      {/* <i className="fa-regular fa-magnifying-glass"></i> */}
-    </div>
-  );
-};
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -90,51 +14,41 @@ function NavBar() {
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="nav-container">
-          <a href="/" className="nav-logo">
-            CodeBucks
-            {/* <i className="fa fa-code"></i> */}
-            {/* <i className="fa-solid fa-bars"></i> */}
-          </a>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <a
-                href="/"
-                activeClassName="active"
+                href="/Welcome"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                Home
+                Welcome to codilar
               </a>
             </li>
             <li className="nav-item">
               <a
-                href="/about"
-                activeClassName="active"
+                href="Sign"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                About
+                Sign In or{" "}
               </a>
             </li>
             <li className="nav-item">
               <a
-                href="/blog"
-                activeClassName="active"
+                href="/Create"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                Blog
+                Create an Account
               </a>
             </li>
             <li className="nav-item">
-              <a
-                href="/contact"
-                activeClassName="active"
-                className="nav-links"
+              <select
+                className="select-option"
                 onClick={click ? handleClick : null}
               >
-                Contact Us
-              </a>
+                <option className="nav-links">vijayawadda</option>
+              </select>
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
@@ -142,6 +56,21 @@ function NavBar() {
           </div>
         </div>
       </nav>
+      <div className="header-content">
+        <div className={click ? "logo-img" : "logo "}>
+          <img src={Starbucks} alt="" className="starLogo" />
+        </div>
+        <div className="header-search">
+          <input
+            className="header-textbox"
+            type="text"
+            placeholder="Search entire store here.."
+          />
+          <div className="cart-icon">
+            <BsCart4 />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

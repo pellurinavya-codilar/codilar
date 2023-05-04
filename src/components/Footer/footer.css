@@ -1,3 +1,19 @@
+.asd{
+     background-color: var(--secondnavbarbackgroundcolor);
+  color: var(--secondnavbarcolor); 
+}
+.container-footer{
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  display: flex;
+  /* background-color: var(--secondnavbarbackgroundcolor);
+  color: var(--secondnavbarcolor); */
+}
 .container-parent {
   display: flex;
   width: 50%;
@@ -7,9 +23,7 @@
   padding-bottom: 15px;
 }
 .container-footer {
-  display: flex;
-  background-color: var(--secondnavbarbackgroundcolor);
-  color: var(--secondnavbarcolor);
+ 
 }
 .input-field {
   display: flex;
@@ -71,11 +85,10 @@
         justify-content: center;
         width: 94%;
         padding: 20px 12px 20px 12px;
-        background-color: var(--navbarcolor);
+        /* background-color: var(--navbarcolor); */
     
     }
     .select-different {
-        width: 48%;
         margin-top: 0px;
     }
     li:hover {
@@ -97,11 +110,10 @@
         justify-content: center;
         width: 96%;
         padding: 20px 12px 20px 12px;
-        background-color: var(--navbarcolor);
+        /* background-color: var(--navbarcolor); */
     
     }
     .select-different {
-        width: 48%;
         margin-top: 0px;
     }
     li:hover {

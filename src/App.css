@@ -2,7 +2,6 @@
 *{
   margin:0;
   padding:0;
-  /* width:100%; */
   font-family:'Open Sans';
   font-size: 14px;
 }
@@ -25,6 +24,7 @@
   --footerbackgroundcolor:#f4f4f4;
   --footertextcolor:#575757;
   --footerserachbuttonbackgroundcolor:#1979c3;
+  --searchborder:#c2c2c2;
 
 
 }
