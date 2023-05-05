@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <div>
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
-      <div className="navyaNav">
+      <div className="headernav">
         <nav className="navbar" onClick={(e) => e.stopPropagation()}>
           <div className="nav-container">
             <ul className={click ? "nav-menu active" : "nav-menu"}>

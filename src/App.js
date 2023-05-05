@@ -7,7 +7,7 @@ import OtherProduct from "./components/Otherproducts/otherProducts";
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
       {/* <ProductNav /> */}
       <Product />
       <OtherProduct />

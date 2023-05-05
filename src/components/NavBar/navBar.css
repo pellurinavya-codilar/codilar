@@ -1,5 +1,5 @@
 
-.navyaNav{
+.headernav{
   background-color: var(--navbackground);
 
 }
@@ -157,12 +157,12 @@
     color: var(--menutextcolor);
   }
   .header-content {
-    max-width: 280px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-between;
     padding-bottom: 20px;
+    padding-top: 70px;
    
   
   }
