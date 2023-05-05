@@ -215,9 +215,13 @@ query {
                           <ol key={index} className="order-list-info">
                             <li>
                               <p className="review-header">{review.summary}</p>
-                              <p>{review.value}</p>
-                              <p>{review.name}</p>
-                              <p>{review.text}</p>
+                              <div className="review-block">
+                                <p className="review-rating">Rating</p>
+                                {/* <p>{review.ratings_breakdown.name}</p> */}
+                                <p className="review-description">
+                                  {review.text}
+                                </p>
+                              </div>
                               <p>Review by{review.nickname}</p>
                               <p>{review.created_at}</p>
                             </li>

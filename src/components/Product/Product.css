@@ -150,6 +150,16 @@
   font-size: 1.8rem;
   margin: 0 0 30px;
 }
+.review-rating{
+  display: table-cell;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    padding-top: 1px;
+    vertical-align: top;
+}
+.review-block{
+  display: flex;
+}
 .column-head{
   padding: 5.5px 30px 10px 0;
   float: left;
